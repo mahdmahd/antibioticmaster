@@ -8,7 +8,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'antibioticmaster'
-copyright = '2022, MehdiKhadem'
+copyright = '2022, MehdiKhadem,FatemeSaberdoust'
 author = 'MehdiKhadem'
 release = '0.0.1'
 
@@ -19,7 +19,9 @@ import sys
 import os
 import shlex
 
-extensions = []
+sys.path.insert(0, os.path.abspath('..\.'))
+extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.githubpages']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
