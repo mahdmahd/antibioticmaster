@@ -9,9 +9,9 @@
         <a><i class="fa {% if theme_direction == "ltr" %} fa-angle-right{% else %} fa-angle-left{% endif %}"></i></a>&nbsp;
         <a><i class="fa fa-folder-open-o"></i>&nbsp; {{ title }}</a>
     {% else %}
-        <a><i class="fa fa-folder-o"></i>&nbsp; فهرست</a>
+        <a><i class="fa fa-folder-o"></i>&nbsp; {{glossary.root_page}}</a>
 <!--        <a href="http://coderz.ir/python" class="top-src" target="_blank"><i class="fa fa-map-marker"></i>&nbsp; در کدرز</a>-->
-    {% endif %}
+<!--    {% endif %}
     {% if pagename != "search" %}
         {% if display_github %}
             <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ source_suffix }}" id="top-src" target="_blank"><i class="fa fa-github"></i>&nbsp; {{glossary.on_github}}</a>
@@ -22,5 +22,5 @@
         {% elif show_source and has_source and sourcename %}
             <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow" id="top-src" target="_blank"><i class="fa fa-code"></i>&nbsp; {{glossary.on_source}}</a>
         {% endif %}
-    {% endif %}
+    {% endif %}-->
 </div>
