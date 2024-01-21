@@ -8,7 +8,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'antibioticmaster'
-copyright = '2022, MehdiKhadem,FatemeSaberdoust'
+copyright = '2024, MehdiKhadem'
 author = 'MehdiKhadem'
 release = '0.0.1'
 
